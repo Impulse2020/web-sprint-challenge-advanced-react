@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+A stateful component is a component that uses to state to handle data, and user inputs
+
 2. Describe the different phases of the component lifecycle.
+
+Mounting, updating, and unmounting
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+Mounting the component to the DOM, updating the state of the component to change its display, and unmounting the component to make it 
+
 4. Define stateful logic.
 
+Following the flow of state data, and how it changes.
+
 5. Describe how to test a React component with React Testing Library.
+
+Figure out what you're testing for, describe it in a testing statement, and then use an ancillary testing program to execute the test like Cypress, Yup, or the react testing library.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -47,7 +57,9 @@ You are expected to be able to answer questions in these areas. Your responses c
 _This project uses a local server for the data fetching. You will need three seperate terminal windows open:_
 
 1. _one for your server_
+
 2. _one for your React app (in the /client folder)_
+
 3. _and one to run your tests_
 
 _Please follow the setup instructions closely so that you can get everything up and running smoothly_
