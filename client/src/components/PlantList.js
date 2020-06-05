@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import axios from "axios";
 
 export default class PlantList extends Component {
@@ -9,6 +9,21 @@ export default class PlantList extends Component {
   //   - set the returned plants array to this.state.plants
 
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/
+  constructor(){
+    super();
+    this.state = {
+      plants: []
+    }
+
+  }
+  
+componentDidMount(){
+  fetch('./plants.plantData')
+  .then(response=> console.log(response))
+  .catch(error => console.log(error))
+  console.log(this.state.plants)
+}
+
   render() {
     return (
       <main className="plant-list">
