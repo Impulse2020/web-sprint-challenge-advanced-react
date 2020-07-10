@@ -63,11 +63,11 @@ const CheckoutForm = (props) => {
         </label>
         <label>
           City:
-          <input name="city" value={values.city} onChange={handleChanges} data-testid = "name-city" data-testid ="input-City" />
+          <input name="city" value={values.city} onChange={handleChanges} data-testid = "name-city" data-testid ="city-input" />
         </label>
         <label>
           State:
-          <input name="state" value={values.state} onChange={handleChanges} data-testid = "input-State" />
+          <input name="state" value={values.state} onChange={handleChanges} data-testid = "state-input" />
         </label>
         <label>
           Zip:
