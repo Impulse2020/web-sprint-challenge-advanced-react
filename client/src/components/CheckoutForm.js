@@ -40,7 +40,6 @@ const CheckoutForm = (props) => {
             name="firstName"
             value={values.firstName}
             onChange={handleChanges}
-            data-testid = "name-input"
           />
         </label>
         <label>
@@ -49,7 +48,6 @@ const CheckoutForm = (props) => {
             name="lastName"
             value={values.lastName}
             onChange={handleChanges}
-            data-testid = "lastName-input"
           />
         </label>
         <label>
@@ -58,26 +56,25 @@ const CheckoutForm = (props) => {
             name="address"
             value={values.address}
             onChange={handleChanges}
-            data-testid = "address-input"
           />
         </label>
         <label>
           City:
-          <input name="city" value={values.city} onChange={handleChanges} data-testid = "name-city" data-testid ="input-City" />
+          <input name="city" value={values.city} onChange={handleChanges}  />
         </label>
         <label>
           State:
-          <input name="state" value={values.state} onChange={handleChanges} data-testid = "input-State" />
+          <input name="state" value={values.state} onChange={handleChanges}  />
         </label>
         <label>
           Zip:
-          <input name="zip" value={values.zip} onChange={handleChanges} data-testid = "zip-input" />
+          <input name="zip" value={values.zip} onChange={handleChanges}  />
         </label>
         <button>Checkout</button>
       </form>
 
       {showSuccessMessage && (
-        <div className="success-message" data-testid="successMessage">
+        <div className="success-message">
           <p>
             You have ordered some plants! Woo-hoo! <span role="img">🎉</span>
           </p>
