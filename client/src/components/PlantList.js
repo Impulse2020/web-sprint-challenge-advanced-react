@@ -21,7 +21,7 @@ componentDidMount(){
   axios.get('http://localhost:3333/plants')
   .then(res => this.setState({ plants: res.data.plantsData, plantsFiltered: res.data.plantsData }))
   .catch(error => console.log(error))
-  console.log(this.state.plants)
+
 }
 
   render() {
